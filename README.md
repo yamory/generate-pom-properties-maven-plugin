@@ -178,7 +178,9 @@ Create `assembly.xml` in the project directory and describe it as follows.
 </project>
 ```
 
-## build
+## contribution
+
+### build
 
 ```bash
 git clone https://github.com/yamory/generate-pom-properties-maven-plugin.git
@@ -186,10 +188,22 @@ cd generate-pom-properties-maven-plugin
 ./mvnw install
 ```
 
-## run
+### run
 
 To generate `pom.properties` only, execute the following command.
 
 ```bash
 ./mvnw io.yamory:generate-pom-properties-maven-plugin:generatePomProperties
 ```
+
+## release
+
+### how to release
+
+Generate release tags and release commits.
+
+```bash
+./mvnw release:prepare
+```
+
+Next, when you create a release on your GitHub repository, it will be released on JitPack.
