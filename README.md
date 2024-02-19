@@ -177,6 +177,14 @@ Create `assembly.xml` in the project directory and describe it as follows.
     </build>
 </project>
 ```
+## properties
+
+| name                   | description                                                 | default                            |
+| ---------------------- | ----------------------------------------------------------- | ---------------------------------- |
+| outputDirectory        | The directory where the `pom.properties` is generated.      | `${project.build.outputDirectory}` |
+| outputPomDirectoryName | The directory name where the `pom.properties` is generated. | `.pom`                             |
+
+`pom.properties` is generated in `${outputDirectory}/${outputPomDirectoryName}/META-INF/maven/${groupId}/${artifactId}/pom.properties`.
 
 ## contribution
 
