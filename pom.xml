@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.yamory</groupId>
     <artifactId>generate-pom-properties-maven-plugin</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
     <name>generate-pom-properties-maven-plugin</name>
     <description>Plugin to generate pom.properties for all dependencies</description>
@@ -41,7 +41,7 @@
     <scm>
         <url>https://github.com/${project.repo}</url>
         <connection>scm:git:git@github.com:${project.repo}.git</connection>
-        <tag>v0.0.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <dependencies>
